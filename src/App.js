@@ -14,7 +14,7 @@ function App() {
     numCorWords: 0,
 
   });//result
-  const [time, setTime] = useState(10);//time for the test
+  const [time, setTime] = useState(60);//time for the test
   
   let s = [];
   //making an array of pairs of letter and -1(value that represents

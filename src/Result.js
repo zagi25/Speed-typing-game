@@ -1,6 +1,6 @@
 function Result ({result, setStart, setTime}) {
   const handleClick = () => {
-    setTime(10);
+    setTime(60);
     // setStart(false);
   }
   return (
