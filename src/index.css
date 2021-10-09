@@ -1,13 +1,198 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: 'Lato', sans-serif;
+	background: #3b5dd9;
+	line-height: 1.5;
+	letter-spacing: 0.2rem;
+
 }
+
+main {
+}
+
+/* START PAGE */
+.title {
+	margin-top: 6rem;
+}
+
+.title h1 {
+	font-size: 4rem;
+	color: #ddede4;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.title h3 {
+	color: #ddede4;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.start {
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.btn {
+	background: #25c46d;
+	font-weight: normal;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 1rem 3.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: #ddede4;
+	transition: transform 0.15s linear;
+
+}
+
+.btn:hover {
+	box-shadow: 0px 3px 20px 5px #2d48a8;
+	transform: scale(1.05);
+
+}
+
+/*GAME PAGE */
+.game-container {
+	margin: 0 auto;
+	background: #ddede4;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+	box-shadow: 0px 3px 20px 5px #2d48a8;
+}
+
+.game-container .text-p {
+	font-size: 1.1rem;
+	margin: 2.5rem 2.5rem;
+	text-align: justify;
+	border: 2px solid rgba(0,0,0, .4);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0, .3) inset;
+}
+
+.prep-time {
+	margin-bottom: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.prep-time p {
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.prep-time p:nth-child(2){
+	padding-left: 0.5rem;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #b51a02;
+}
+
+.prep-time p:last-child {
+	padding-left: 0.5rem;
+}
+
+.text-input {
+	margin-bottom: 2.97rem;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+	width: 100%;
+}
+
+.text-input input {
+	background: inherit;
+	font-size: 2rem;
+	width: 100%;
+	border: none;
+	border-bottom: 3px solid rgba(0,0,0, .3);
+	outline: none;
+	color: rgba(0,0,0, .3);
+}
+
+.time{
+	width: 100%;
+	height: 7rem;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ddede4;
+}
+
+/*RESULT PAGE*/
+.result {
+	background: #ddede4;
+	width: 40%;
+	text-align: center;
+	margin: 7rem auto 0 auto;
+	border-radius:0.5rem;
+	box-shadow: 0px 3px 20px 5px #2d48a8;
+}
+
+.result h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.result p {
+	font-size: 1.5rem;
+	margin-bottom: 0.7rem;
+	font-weight: 600;
+}
+
+
+
+.result button {
+	margin-bottom: 1.6rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color:#ddede4;
+	padding: 1rem 2.5rem;
+}
+
+.result button:hover {
+	box-shadow: 0px 3px 10px 1px rgba(0,0,0, 0.3);
+}
+
+
+.low {
+	opacity: 0.5;
+	font-weight: bold;
+	padding-bottom: 0.1rem;
+}
+
+.red {
+	opacity: 1;
+	color: white;
+	background: #de1e00;
+	font-weight: bold;
+	padding-bottom: 0.1rem;
+}
+
+.green {
+	opacity: 1;
+ 	font-weight: bold;
+	padding-bottom: 0.1rem;
+}
+
